@@ -4,6 +4,8 @@ Make sure you have all the requirements in your system, if not run the below com
 pip install -r requirements.txt
 
 Now to train the model, run this command
+
+
 python train.py --workers 8 --device 0 --batch-size 16 --data data/data.yaml --img 640 640
 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml --epochs 500
 
